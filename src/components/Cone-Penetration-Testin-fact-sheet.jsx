@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import "./Cone-Penetration-Testin-fact-sheet.css";
-// import paganiImage from "../assets/PAGANI_MKS.webp";
 
 const ConePenetrationTestFactSheet = () => {
   const [isOpen, setIsOpen] = useState({
     features: false,
     process: false,
     applications: false,
-    contact: false, // State for the contact form section
+    contact: false,
   });
 
   const [formData, setFormData] = useState({
@@ -17,6 +16,7 @@ const ConePenetrationTestFactSheet = () => {
     subject: "",
     message: "",
   });
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const toggleSection = (section) => {
@@ -41,7 +41,7 @@ const ConePenetrationTestFactSheet = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitted(true);
-    // Add code here to handle form submission, such as sending data to a backend
+    // You can add additional form submission code here.
   };
 
   return (
@@ -73,11 +73,6 @@ const ConePenetrationTestFactSheet = () => {
             {isOpen.features && (
               <Fade>
                 <div className="content">
-                  {/* <img
-                    src={paganiImage}
-                    alt="Pagani CPT Rig"
-                    className="pagani-image"
-                  /> */}
                   <table className="features-table">
                     <thead>
                       <tr>
@@ -195,72 +190,6 @@ const ConePenetrationTestFactSheet = () => {
               </Fade>
             )}
           </div>
-
-          {/* Contact Form Section */}
-          {/* <div
-            id="contact"
-            className={`accordion-item ${isOpen.contact ? "open" : ""}`}
-          >
-            <h2 className="heading" onClick={() => toggleSection("contact")}>
-              Contact Us
-            </h2>
-            {isOpen.contact && (
-              <Fade>
-                <div className="content">
-                  {isSubmitted ? (
-                    <p className="success-message">
-                      Thank you for contacting us! We will get back to you soon.
-                    </p>
-                  ) : (
-                    <form onSubmit={handleSubmit} className="contact-form">
-                      <div className="form-group">
-                        <label>Name:</label>
-                        <input
-                          type="text"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                      <div className="form-group">
-                        <label>Email:</label>
-                        <input
-                          type="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                      <div className="form-group">
-                        <label>Subject:</label>
-                        <input
-                          type="text"
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                      <div className="form-group">
-                        <label>Message:</label>
-                        <textarea
-                          name="message"
-                          value={formData.message}
-                          onChange={handleChange}
-                          required
-                        ></textarea>
-                      </div>
-                      <button type="submit" className="submit-button">
-                        Submit
-                      </button>
-                    </form>
-                  )}
-                </div>
-              </Fade>
-            )}
-          </div> */}
         </div>
       </div>
     </div>

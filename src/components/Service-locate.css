@@ -2,25 +2,25 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
   position: relative;
 }
 
 .header-section {
   text-align: center;
   margin-bottom: 20px;
-  animation: fadeIn 1s ease-in-out;
+  animation: fade-in 1s ease-in-out;
 }
 
 .title {
   font-size: 2.5rem;
   color: #2c3e50;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
 }
 
 .overview {
@@ -49,17 +49,18 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
-  animation: fadeIn 1s ease-in-out;
+  animation: fade-in 1s ease-in-out;
 }
 
 .accordion-item.open .content {
   max-height: 1000px;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -74,7 +75,7 @@
   margin-bottom: 20px;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
 }
 
 .features-table thead tr,

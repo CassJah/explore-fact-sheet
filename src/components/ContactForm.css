@@ -2,10 +2,10 @@
   max-width: 600px;
   margin: 40px auto 20px;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+  font-family: Arial, sans-serif;
 }
 
 .contact-title {
@@ -27,6 +27,12 @@
   margin-bottom: 5px;
 }
 
+/* Moved this block up */
+.contact-form .form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
 .contact-form .form-group input,
 .contact-form .form-group textarea {
   padding: 10px;
@@ -40,11 +46,6 @@
 .contact-form .form-group input:focus,
 .contact-form .form-group textarea:focus {
   border-color: #e74c3c;
-}
-
-.contact-form .form-group textarea {
-  resize: vertical;
-  min-height: 100px;
 }
 
 .submit-button {
@@ -65,15 +66,16 @@
 
 .status-message {
   margin-top: 10px;
-  color: green;
   font-weight: bold;
+  color: green;
+  text-align: center;
 }
 
 .status-message.error {
   color: red;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .contact-form-container {
     padding: 20px;
   }

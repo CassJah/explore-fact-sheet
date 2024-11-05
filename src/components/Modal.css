@@ -1,48 +1,53 @@
+/* Unified modal styling */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 50%);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-/* Common styles for modal content */
 .modal-content {
   background: white;
   padding: 20px;
   border-radius: 8px;
   overflow-y: auto;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 30%);
   position: relative;
-  animation: fadeIn 0.3s ease;
+  animation: fade-in-modal 0.3s ease;
 }
 
-/* Styles for the contact modal */
+/* Specific modal types */
 .contact-modal {
   width: 400px;
   max-height: 80vh;
 }
 
-/* Styles for the fact sheet modal */
 .fact-sheet-modal {
   width: 80%;
   max-width: 1000px;
   max-height: 90vh;
 }
 
+/* Unified .modal-close styling */
 .modal-close {
   position: absolute;
   top: 10px;
-  right: 10px;
-  background: none;
+  right: 20px;
+  background: transparent;
   border: none;
+  color: #e74c3c;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #d35400;
 }
 
 .modal-body {
@@ -59,8 +64,8 @@
 
 .fact-sheet-list button {
   padding: 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #fff;
+  color: rgb(0 0 0);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -70,31 +75,37 @@
 
 .fact-sheet-list button:hover {
   background-color: #e74c3c;
-  color: #ffffff;
+  color: #fff;
 }
 
-.modal-close {
-  position: absolute; /* Position relative to the modal */
-  top: 10px; /* Adjust top position */
-  right: 20px; /* Adjust right position */
-  background: transparent; /* Transparent background */
-  border: none; /* No border */
-  color: #e74c3c; /* Color of the icon */
-  font-size: 1.5rem; /* Adjust size as necessary */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-
-.modal-close:hover {
-  color: #d35400; /* Change color on hover */
-}
-
-@keyframes fadeIn {
+/* Updated fade-in-modal animation */
+@keyframes fade-in-modal {
   from {
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (width <= 600px) {
+  .contact-form-container {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
   }
 }

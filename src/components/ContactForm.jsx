@@ -13,7 +13,11 @@ const ContactForm = () => {
   const [status, setStatus] = useState(""); // To display submission status
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -79,7 +83,15 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
-      {status && <p className="status-message">{status}</p>}
+      {status && (
+        <p
+          className={`status-message ${
+            status.includes("Failed") ? "error" : ""
+          }`}
+        >
+          {status}
+        </p>
+      )}
     </div>
   );
 };
