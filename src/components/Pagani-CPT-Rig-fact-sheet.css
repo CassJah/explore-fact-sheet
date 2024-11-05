@@ -1,0 +1,145 @@
+.fact-sheet-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  background-image: url("../assets/Pagani_rig.jpg"); /* Apply the background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* White text color for contrast */
+}
+
+.explore-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0.7; /* Slight transparency to blend better */
+}
+
+.header-section .title {
+  font-size: 2.5rem;
+  color: #ffffff !important; /* Change color and add !important to ensure it applies */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  margin: 0;
+}
+
+.overview {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent for contrast */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Accordion Styling */
+.heading {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heading:hover {
+  color: #e74c3c;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion .accordion-item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion .accordion-item.open .content {
+  max-height: 1000px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Table Styling */
+.features-table,
+.applications-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.features-table thead tr,
+.applications-table thead tr {
+  background: linear-gradient(135deg, #e74c3c, #e67e22);
+}
+
+.features-table th,
+.applications-table th {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d35400;
+}
+
+.features-table td,
+.applications-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+.features-table tr:nth-child(even),
+.applications-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.features-table tr:hover td,
+.applications-table tr:hover td {
+  background-color: #f5f5f5;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .fact-sheet-container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .overview,
+  .process {
+    font-size: 1rem;
+  }
+}

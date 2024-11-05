@@ -1,0 +1,104 @@
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Carousel Slide Styling */
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Dark Overlay on Hero Section */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  z-index: 1;
+  pointer-events: none; /* Ensure overlay doesn’t block interactions */
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 3;
+  max-width: 600px;
+  padding: 20px;
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto; /* Ensure button is clickable */
+}
+
+/* Hero Content Styling */
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #d35400;
+  color: #ffffff;
+}
+
+/* Highlighted Text for Emphasis */
+.highlighted-text {
+  color: #e74c3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
