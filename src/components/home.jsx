@@ -29,7 +29,7 @@ function Home({ onViewServicesClick }) {
               <span className="highlighted-text">Testing</span> and Beyond
             </h1>
             <p>
-              Specializing in everything from soil analysis to service locating,
+              Specialising in everything from soil analysis to service locating,
               Explore Geotechnical offers complete solutions for site
               investigation tailored to your project’s needs.
             </p>

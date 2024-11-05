@@ -239,7 +239,7 @@ const PaganiCPTRigFactSheet = () => {
                       <td>Remote and Challenging Locations</td>
                       <td>
                         The rig's compact design and transportability make it
-                        ideal for difficult-to-access sites such as riverbanks,
+                        ideal for difficult to access sites such as riverbanks,
                         tidal environments, and embankments.
                       </td>
                     </tr>

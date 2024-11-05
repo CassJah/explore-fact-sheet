@@ -129,7 +129,7 @@ const Header = ({ onFactSheetClick, onContactClick }) => {
             onMouseEnter={toggleDropdown}
             onMouseLeave={toggleDropdown}
           >
-            <button className="dropdown-btn">Fact Sheets</button>
+            <button className="dropdown-btn">Our Capabilities</button>
             {showDropdown && (
               <div className="dropdown-content">
                 <Link to="#" onClick={() => onFactSheetClick("cpt")}>
@@ -183,6 +183,7 @@ const Header = ({ onFactSheetClick, onContactClick }) => {
           <Link to="#" className="contact-link" onClick={onContactClick}>
             Contact
           </Link>
+          <button className="dropdown-btn">Blog</button>
         </nav>
       )}
     </header>

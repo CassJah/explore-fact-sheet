@@ -16,6 +16,7 @@ import Modal from "./components/Modal";
 import Home from "./components/home";
 import ContactForm from "./components/ContactForm";
 import Header from "./components/Header";
+import Footer from "./components/Footer"; // Import the Footer component
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -132,6 +133,7 @@ function App() {
             {activeContent === "contact" && <ContactForm />}
           </Modal>
         </div>
+        <Footer /> {/* Add Footer here */}
       </div>
     </Router>
   );
