@@ -17,6 +17,7 @@ import Home from "./components/home";
 import ContactForm from "./components/ContactForm";
 import Header from "./components/Header";
 import Footer from "./components/Footer"; // Import the Footer component
+import "./index.css";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);

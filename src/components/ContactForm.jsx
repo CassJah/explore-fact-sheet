@@ -10,7 +10,7 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [status, setStatus] = useState(""); // To display submission status
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,7 +23,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/send", formData); // Adjust URL if needed
+      await axios.post("http://localhost:5000/send", formData);
       setStatus("Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
