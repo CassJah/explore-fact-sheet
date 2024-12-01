@@ -1,20 +1,29 @@
 {
   "files": {
-    "main.css": "/explore-fact-sheet/static/css/main.ce259340.css",
-    "main.js": "/explore-fact-sheet/static/js/main.d2bb5175.js",
+    "main.css": "/explore-fact-sheet/static/css/main.5df42c77.css",
+    "main.js": "/explore-fact-sheet/static/js/main.f5fbcebe.js",
     "static/js/453.99000a06.chunk.js": "/explore-fact-sheet/static/js/453.99000a06.chunk.js",
+    "static/media/new_tech.jpg": "/explore-fact-sheet/static/media/new_tech.8cf521d881fdb8d9f997.jpg",
+    "static/media/seismic_volcano.jpg": "/explore-fact-sheet/static/media/seismic_volcano.86374277d0ec203bc1b3.jpg",
+    "static/media/ai_brain.jpg": "/explore-fact-sheet/static/media/ai_brain.3345401d8ac5b069480a.jpg",
+    "static/media/project_management_focus.jpg": "/explore-fact-sheet/static/media/project_management_focus.57fdc0c5117e9f2f99bb.jpg",
     "static/media/pagani_oranges.jpg": "/explore-fact-sheet/static/media/pagani_oranges.727cf20c1c0c5fbc3891.jpg",
+    "static/media/a.i_gene.jpg": "/explore-fact-sheet/static/media/a.i_gene.ca3ee57624de7a0fadce.jpg",
     "static/media/excavator-rig.jpg.JPG": "/explore-fact-sheet/static/media/excavator-rig.jpg.429fdc5a8dad3e1f0d97.JPG",
     "static/media/pagani_mahia.jpg": "/explore-fact-sheet/static/media/pagani_mahia.2f13ce01638ef6402c6a.jpg",
+    "static/media/interface.jpg": "/explore-fact-sheet/static/media/interface.c6bc55a7d897096e9046.jpg",
+    "static/media/construction_site.jpg": "/explore-fact-sheet/static/media/construction_site.7c6c64219ed35b300c92.jpg",
     "static/media/Pagani_rig.jpg": "/explore-fact-sheet/static/media/Pagani_rig.e8fec67b646402741c48.jpg",
+    "static/media/cpt_dmt_stress.jpg": "/explore-fact-sheet/static/media/cpt_dmt_stress.651b854f5aa113dc964c.jpg",
     "static/media/explore_nb.png": "/explore-fact-sheet/static/media/explore_nb.ad661ff960b0cd98c46a.png",
+    "static/media/Explore_Logo.png": "/explore-fact-sheet/static/media/Explore_Logo.a3e84c8356a217c8acdd.png",
     "index.html": "/explore-fact-sheet/index.html",
-    "main.ce259340.css.map": "/explore-fact-sheet/static/css/main.ce259340.css.map",
-    "main.d2bb5175.js.map": "/explore-fact-sheet/static/js/main.d2bb5175.js.map",
+    "main.5df42c77.css.map": "/explore-fact-sheet/static/css/main.5df42c77.css.map",
+    "main.f5fbcebe.js.map": "/explore-fact-sheet/static/js/main.f5fbcebe.js.map",
     "453.99000a06.chunk.js.map": "/explore-fact-sheet/static/js/453.99000a06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce259340.css",
-    "static/js/main.d2bb5175.js"
+    "static/css/main.5df42c77.css",
+    "static/js/main.f5fbcebe.js"
   ]
 }
