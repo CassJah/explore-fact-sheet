@@ -5,7 +5,7 @@ import "./Direct-Push-Soil-Sampling-fact-sheet.css";
 const DirectPushSoilSamplingFactSheet = () => {
   const [isOpen, setIsOpen] = useState({
     features: false,
-    process: false,
+    testingProcess: false,
     applications: false,
   });
 
@@ -14,10 +14,6 @@ const DirectPushSoilSamplingFactSheet = () => {
       ...prevState,
       [section]: !prevState[section],
     }));
-
-    document.getElementById(section).scrollIntoView({
-      behavior: "smooth",
-    });
   };
 
   return (
@@ -36,6 +32,7 @@ const DirectPushSoilSamplingFactSheet = () => {
       </p>
 
       <div className="accordion">
+        {/* Key Features Section */}
         <div
           id="features"
           className={`accordion-item ${isOpen.features ? "open" : ""}`}
@@ -61,7 +58,26 @@ const DirectPushSoilSamplingFactSheet = () => {
                         discrete sampling at specific depths.
                       </td>
                     </tr>
-                    {/* Additional table rows omitted for brevity */}
+                    <tr>
+                      <td>Direct Push Sampling</td>
+                      <td>
+                        Achieves soil samples through direct push or percussion
+                        drive, minimizing sample disturbance.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Plastic Sample Liners</td>
+                      <td>
+                        Ensures sample containment and integrity for further
+                        testing with 42mm diameter liners.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rapid Sampling</td>
+                      <td>
+                        Enables quick sample collection with minimal setup time.
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -69,7 +85,91 @@ const DirectPushSoilSamplingFactSheet = () => {
           )}
         </div>
 
-        {/* Additional sections omitted for brevity */}
+        {/* Testing Process Section */}
+        <div
+          id="testingProcess"
+          className={`accordion-item ${isOpen.testingProcess ? "open" : ""}`}
+        >
+          <h2
+            className="heading"
+            onClick={() => toggleSection("testingProcess")}
+          >
+            Testing Process
+          </h2>
+          {isOpen.testingProcess && (
+            <Fade>
+              <div className="content">
+                <p>
+                  The Direct Push Soil Sampling process involves hydraulically
+                  driving a sampling rod into the ground to collect soil. Key
+                  steps include:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Sealed Sampling:</strong> The soil is contained
+                    within a sealed liner to prevent contamination.
+                  </li>
+                  <li>
+                    <strong>Flexible Sampling:</strong> Enables continuous
+                    sampling or discrete intervals based on project
+                    requirements.
+                  </li>
+                  <li>
+                    <strong>Preserved Samples:</strong> The collected soil is
+                    preserved in liners for further analysis.
+                  </li>
+                </ul>
+              </div>
+            </Fade>
+          )}
+        </div>
+
+        {/* Applications Section */}
+        <div
+          id="applications"
+          className={`accordion-item ${isOpen.applications ? "open" : ""}`}
+        >
+          <h2 className="heading" onClick={() => toggleSection("applications")}>
+            Applications
+          </h2>
+          {isOpen.applications && (
+            <Fade>
+              <div className="content">
+                <table className="applications-table">
+                  <thead>
+                    <tr>
+                      <th>Application</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Environmental Surveys</td>
+                      <td>
+                        Suitable for contamination and environmental impact
+                        assessments by providing undisturbed samples.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Geotechnical Investigations</td>
+                      <td>
+                        Assists in analyzing soil structure and stratigraphy for
+                        construction planning.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Chemical Testing</td>
+                      <td>
+                        Provides sealed samples ideal for gas and liquid
+                        analysis.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </Fade>
+          )}
+        </div>
       </div>
     </div>
   );

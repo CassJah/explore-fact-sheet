@@ -1,0 +1,110 @@
+/* Blog Post Container Styling */
+.blog-post-container {
+  max-width: 900px;
+  margin: 120px auto; /* Adds top margin to create space from the header */
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Header Title Styling */
+.blog-post-container h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subheading Styling */
+.blog-post-container h2 {
+  font-size: 1.8rem;
+  color: #e74c3c;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.blog-post-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8; /* Increased line-height for better readability */
+}
+
+/* List Styling */
+.blog-post-container ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-post-container ul li {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.blog-post-container ul li strong {
+  color: #e74c3c;
+}
+
+/* Highlight Styling */
+.blog-post-container strong {
+  color: #e74c3c;
+}
+
+/* Link Styling */
+.blog-post-container a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-post-container a:hover {
+  text-decoration: underline;
+}
+
+/* Header Image Styling */
+.blog-header-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inline Blog Images Styling */
+.blog-image {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .blog-post-container {
+    padding: 15px;
+  }
+
+  .blog-post-container h1 {
+    font-size: 2rem;
+  }
+
+  .blog-post-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-container p,
+  .blog-post-container ul li {
+    font-size: 0.9rem;
+  }
+
+  .blog-image {
+    width: 90%;
+  }
+}

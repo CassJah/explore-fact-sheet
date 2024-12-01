@@ -12,11 +12,14 @@ import SeismicDilatometerTestFactSheet from "./components/Seismic-Dilatometer-Te
 import DissipationTestingFactSheet from "./components/DissipationTestingFactSheet";
 import ServiceLocateFactSheet from "./components/Service-locate";
 import ExcavatorMountedRigFactSheet from "./components/ExcavatorMountedRig";
+import Blog from "./components/Blog";
+import InnovatingCPTTesting from "./components/InnovatingCPTTesting"; // Blog Component
+import CPTvsDMT from "./components/CPTvsDMT"; // New Blog Post Component
 import Modal from "./components/Modal";
 import Home from "./components/home";
 import ContactForm from "./components/ContactForm";
 import Header from "./components/Header";
-import Footer from "./components/Footer"; // Import the Footer component
+import Footer from "./components/Footer";
 import "./index.css";
 
 function App() {
@@ -57,6 +60,15 @@ function App() {
               element={
                 <Home onViewServicesClick={openFactSheetSelectionModal} />
               }
+            />
+            <Route path="/blogs" element={<Blog />} />
+            <Route
+              path="/blogs/innovating-cpt-testing"
+              element={<InnovatingCPTTesting />}
+            />
+            <Route
+              path="/blogs/cpt-vs-dmt"
+              element={<CPTvsDMT />} // Add new route for CPT vs. DMT blog
             />
           </Routes>
 
@@ -134,7 +146,7 @@ function App() {
             {activeContent === "contact" && <ContactForm />}
           </Modal>
         </div>
-        <Footer /> {/* Add Footer here */}
+        <Footer />
       </div>
     </Router>
   );

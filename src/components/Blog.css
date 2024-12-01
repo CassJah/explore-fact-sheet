@@ -1,0 +1,65 @@
+/* Blog Container Styles */
+.blog-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.blog-card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.blog-card-link {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: auto; /* Ensures the button stays at the bottom */
+  display: inline-block; /* Always ensure visibility */
+  opacity: 1; /* Ensure visibility */
+}
+
+.blog-card-link:hover {
+  background: #2980b9;
+  text-decoration: none; /* Prevent underline on hover */
+}

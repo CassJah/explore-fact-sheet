@@ -1,0 +1,69 @@
+.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.performance-table th {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.performance-table td {
+  text-align: left;
+  color: #2c3e50;
+}
+
+.performance-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.performance-table tr:hover {
+  background-color: #f1f1f1;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.comparison-table td ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+  background-color: #f1f1f1;
+}
