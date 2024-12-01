@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/explore-fact-sheet/static/css/main.5df42c77.css",
-    "main.js": "/explore-fact-sheet/static/js/main.f5fbcebe.js",
+    "main.js": "/explore-fact-sheet/static/js/main.4af9319c.js",
     "static/js/453.99000a06.chunk.js": "/explore-fact-sheet/static/js/453.99000a06.chunk.js",
     "static/media/new_tech.jpg": "/explore-fact-sheet/static/media/new_tech.8cf521d881fdb8d9f997.jpg",
     "static/media/seismic_volcano.jpg": "/explore-fact-sheet/static/media/seismic_volcano.86374277d0ec203bc1b3.jpg",
@@ -19,11 +19,11 @@
     "static/media/Explore_Logo.png": "/explore-fact-sheet/static/media/Explore_Logo.a3e84c8356a217c8acdd.png",
     "index.html": "/explore-fact-sheet/index.html",
     "main.5df42c77.css.map": "/explore-fact-sheet/static/css/main.5df42c77.css.map",
-    "main.f5fbcebe.js.map": "/explore-fact-sheet/static/js/main.f5fbcebe.js.map",
+    "main.4af9319c.js.map": "/explore-fact-sheet/static/js/main.4af9319c.js.map",
     "453.99000a06.chunk.js.map": "/explore-fact-sheet/static/js/453.99000a06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5df42c77.css",
-    "static/js/main.f5fbcebe.js"
+    "static/js/main.4af9319c.js"
   ]
 }
